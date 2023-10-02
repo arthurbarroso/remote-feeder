@@ -1,0 +1,46 @@
+{:port #profile {:default #env PORT
+                 :dev 4000
+                 :test 4001}
+
+ :database_host #profile {:default #env DATABASE_HOST
+                          :dev "localhost"
+                          :test ""}
+
+ :database_port #profile {:default #env DATABASE_PORT
+                          :dev "5432"
+                          :test ""}
+
+ :database_user #profile {:default #env DATABASE_USER
+                          :dev "postgres"
+                          :test ""}
+
+ :database_password #profile {:default #env DATABASE_PASSWORD
+                              :dev "postgres"
+                              :test ""}
+
+ :database_name #profile {:default #env DATABASE_NAME
+                          :dev "database"
+                          :test ""}
+
+ :database_backend #profile {:default #env DATABASE_BACKEND
+                             :dev "pg"
+                             :test "mem"}
+ :database_id #profile {:default nil
+                        :dev nil
+                        :test "feed"}
+
+ :jwt_secret #profile {:default #env JWT_SECRET
+                       :dev "test"
+                       :test "test"}
+
+ :mosquitto_host #profile {:default #env MQTT_HOST
+                           :dev "tcp://localhost:1883"
+                           :test "tcp://localhost:1883"}
+
+ :mosquitto_user #profile {:default #env MQTT_USER
+                           :dev "user1"
+                           :test "user1"}
+
+ :mosquitto_pass #profile {:default #env MQTT_PASS
+                           :dev "hotel2202"
+                           :test "hotel2202"}}

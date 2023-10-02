@@ -1,0 +1,119 @@
+body {
+		font-family: 'Poppins', sans-serif;
+		margin: 0;
+		outline: 0;
+		padding: 0;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+}
+
+.login {
+		min-width: 400px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+
+form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0;
+}
+
+.login label {
+		font-weight: 500;
+}
+
+.feed {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		height: 80%;
+}
+
+.feed h1 {
+		margin: 0;
+}
+
+.feed table {
+		margin: 10px 0;
+		font-size: 0.9em;
+		min-width: 400px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+		width: 100%;
+		height: 100%;
+}
+
+.feed thead tr{
+		background-color: #009879;
+		color: #ffffff;
+}
+
+.feed th,
+.feed td {
+		padding: 12px 15px;
+}
+
+.feed th {
+		text-align: left;
+}
+
+.feed td {
+		text-align: left;
+}
+
+.feed tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.feed tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.feed tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+input[type="submit"] {
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 0;
+}
+
+.login input[type="submit"] {
+		margin-top: 4%;
+}
+
+.feed table .status_done {
+		color: green;
+}
+
+.feed table .status_not_done {
+		color: red;
+}
+
+.feed table .status {
+		font-weight: 500;
+}
+
+.feed table .time {
+		font-weight: 500;
+}
+
+form input[type="submit"] {
+		height: 36px;
+		color: green;
+}
+
+.app h1 {
+		text-transform: uppercase;
+}
